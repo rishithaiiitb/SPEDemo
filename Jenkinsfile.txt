@@ -32,14 +32,14 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                eco "Deploy artifacts to a production server or environment"
+                echo "Deploy artifacts to a production server or environment"
                 //sh 'your-deployment-command-or-script.sh'
             }
         }
 
         stage('Monitor') {
             steps {
-                eco "Perform monitoring and verification tasks"
+                echo "Perform monitoring and verification tasks"
                 //sh 'your-monitoring-command-or-script.sh'
             }
         }
